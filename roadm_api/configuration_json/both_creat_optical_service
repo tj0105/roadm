@@ -1,0 +1,122 @@
+{
+  "org-openroadm-service:service-create": {
+    "service-name": "W42-port:1_1_U1@192.168.108.169-port:1_1_U1@192.168.108.168",
+    "connection-type": "roadm-line",
+    "service-a-end": {
+      "service-format": "OMS",
+      "service-rate": 0,
+      "ethernet-encoding": "not-applicable",
+      "ethernet-encoding-type":"not-applicable",
+      "mapping-mode": "not-applicable",
+      "clli": "",
+      "node-id": "192.168.108.169",
+      "user-label": "CH505"
+    },
+    "service-z-end": {
+      "service-format": "OMS",
+      "service-rate": 0,
+      "ethernet-encoding": "not-applicable",
+      "ethernet-encoding-type":"not-applicable",
+      "mapping-mode": "not-applicable",
+      "clli": "",
+      "node-id": "192.168.108.168",
+      "user-label": "CH505"
+    },
+    "end-date": "",
+    "net-juniper-service-create:maintenance-state": "inService",
+    "net-juniper-service-create:topology": {
+      "aToZ": [
+        {
+          "hop-type": "node-external",
+          "device": {
+            "node-id": "192.168.108.169"
+          },
+          "resource": {
+            "port": {
+              "circuit-pack-name": "roadm:1_1",
+              "port-name": "port:1_1_U1"
+            }
+          },
+          "resourceType": {
+            "type": "port",
+            "extension": "system:network"
+          }
+        },
+        {
+          "hop-type": "node-internal",
+          "device": {
+            "node-id": "192.168.108.169"
+          },
+          "resource": {
+            "connection-number": "42"
+          },
+          "resourceType": {
+            "type": "connection",
+            "extension": "system:network"
+          }
+        },
+        {
+          "hop-type": "node-external",
+          "device": {
+            "node-id": "192.168.108.169"
+          },
+          "resource": {
+            "port": {
+              "circuit-pack-name": "roadm:1_1",
+              "port-name": "port:1_1_LINE"
+            }
+          },
+          "resourceType": {
+            "type": "port",
+            "extension": "system:network"
+          }
+        },
+        {
+          "hop-type": "node-external",
+          "device": {
+            "node-id": "192.168,108.168"
+          },
+          "resource": {
+            "port": {
+              "circuit-pack-name": "roadm:1_1",
+              "port-name": "port:1_1_LINE"
+            }
+          },
+          "resourceType": {
+            "type": "port",
+            "extension": "system:network"
+          }
+        },
+        {
+          "hop-type": "node-internal",
+          "device": {
+            "node-id": "192.168.108.168"
+          },
+          "resource": {
+            "connection-number": "42"
+          },
+          "resourceType": {
+            "type": "connection",
+            "extension": "system:network"
+          }
+        },
+        {
+          "hop-type": "node-external",
+          "device": {
+            "node-id": "192.168.108.168"
+          },
+          "resource": {
+            "port": {
+              "circuit-pack-name": "roadm:1_1",
+              "port-name": "port:1_1_U1"
+            }
+          },
+          "resourceType": {
+            "type": "port",
+            "extension": "system:network"
+          }
+        }
+      ]
+    }
+  }
+}
